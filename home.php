@@ -1,3 +1,6 @@
+<?php
+    require_once 'verify_login.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -42,7 +45,10 @@
         </nav>
 
         <div class="text-center">
-            <a href="" class="btn btn-outline-light px-5">Sair</a>
+            <a href="logout.php"
+                class="btn btn-outline-light px-5">
+                Sair
+            </a>
         </div>
     </div>
 
