@@ -1,0 +1,45 @@
+body {
+    background-color: hsl(223, 56%, 16%, 0.5);
+}
+
+#sidebar {
+    width: 20%;
+    height: 100vh;
+    /* border-right: 1px solid #000000; */
+    background-color: hsl(223, 56%, 16%);
+}
+
+#content {
+    margin-left: 20%;
+    width: 80%;
+}
+
+ul.list-unstyled li,
+nav a {
+    color: #BFBFBD;
+}
+
+#title {
+    background-color: hsla(0, 0%, 97%, 0.1);
+    border-radius: 5px;
+}
+
+#sidebar ul.list-unstyled li {
+    padding: 15px;
+    border-bottom: 1px solid #182847;
+    font-size: 25px;
+}
+
+main nav ul li {
+    padding: 2px 50px;
+}
+ a:hover {
+    color: hsla(60, 2%, 75%, 0.5);
+    text-decoration: none;
+}
+
+/* TEMP */
+.box {
+    background-color: #121F40;
+    height: 200px;
+}
