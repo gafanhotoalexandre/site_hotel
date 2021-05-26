@@ -38,8 +38,25 @@ main nav ul li {
     text-decoration: none;
 }
 
+#special-logout {
+    display: none;
+}
+
 /* TEMP */
 .box {
     background-color: #121F40;
     height: 200px;
+}
+
+@media (max-width: 994px) {
+    #sidebar {
+        display: none;
+    }
+    #content {
+        margin-left: 0;
+        width: 100%;
+    }
+    #special-logout {
+        display: block;
+    }
 }

@@ -70,11 +70,14 @@
                 </li>
             </ul>
             <!-- Fim Navegação -->
+            <div id="special-logout" class="ml-auto">
+                <a href="logout.php" class="btn btn-outline-secondary px-3">Sair</a>
+            </div>
         </nav>
 
         <main class="mt-3 bg-light py-3">
             <nav class="pb-1">
-                <ul class="d-flex justify-content-around list-unstyled">
+                <ul class="d-flex flex-wrap justify-content-around list-unstyled">
                     <li class="bg-info">
                         <a href="" class=" text-light">Opções</a>
                     </li>
