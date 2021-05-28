@@ -40,7 +40,7 @@ if (isset($_GET['error']) && !empty($_GET['error']) ) {
 
     <nav class="navbar navbar-expand-sm navbar-light bg-white shadow">
         <!-- Logo -->
-        <a href="#" class="h2">Breveler</a>
+        <a href="index.php" class="h2">Breveler</a>
         <!-- Logo -->
 
         <!-- Navegação -->
