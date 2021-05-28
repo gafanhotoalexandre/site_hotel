@@ -2,20 +2,64 @@ html {
     scroll-behavior: smooth;
 }
 
-#sec1, #sec2, #sec3 {
+main > section#home {
     height: 600px;
 }
-#sec1 {
-    background-color: #fff;
-}
-#sec2 {
-    background-color: aqua;
-}
-#sec3 {
-    background-color: tomato;
+
+body {
+    background: url('../imgs/reception.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    /* backdrop-filter: blur(2px); */
 }
 
-main {
-    margin-top: 65px;
+h3, h4 {
+    color: hsla(223, 56%, 16%, 0.85);
+}
+#services {
+    background-color: white;
+}
+.bg-custom {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgb(240, 240, 240, 0.2));
 }
 
+footer {
+    background: hsla(223, 56%, 16%, 0.85);
+    color: #919496;
+}
+footer a {
+    color: #919496;
+    transition: color .2s;
+}
+ul li a {
+    color: white;
+}
+footer a:hover {
+    text-decoration: none;
+    color: #575656;
+}
+
+@media (max-width: 769px) {
+    h2.display-4 { /* frase do home */
+        font-size: 3rem;
+        padding: 5px;
+    }
+    h2.display-3 {
+        font-size: 3rem;
+    }
+    a.display-4 {
+        font-size: 2.4rem;
+    }
+
+    .review {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 330px) {
+    h2.display-4 { /* frase do home */ 
+        font-size: 2.4rem;
+    }
+}
