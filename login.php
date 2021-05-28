@@ -72,7 +72,7 @@ if (isset($_GET['error']) && !empty($_GET['error']) ) {
                         </div>
 
                         <div class="card-body">
-                            <form action="login_action.php" method="post" class="text-light">
+                            <form action="auth/login_action.php" method="post" class="text-light">
                                 <!-- Mensagem de Erro -->
                                 <?php if ($error): ?>
                                     <div class="alert alert-danger">

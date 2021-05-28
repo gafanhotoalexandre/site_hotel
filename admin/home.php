@@ -1,5 +1,5 @@
 <?php
-    require_once 'verify_login.php';
+    require_once '../auth/verify_login.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <!-- Personal CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
     <title>Breveler</title>
 </head>
@@ -21,31 +21,31 @@
     <div id="sidebar" class="fixed-top">
         <nav>
             <div id="title" class="text-center m-3 p-2">
-                <a href="" class="navbar-brand">HOSPEDAGEM X</a>
+                <a href="home.php" class="navbar-brand">HOSPEDAGEM X</a>
             </div>
 
             <ul class="list-unstyled">
                 <li>
-                    <a href="">Opções</a>
+                    <a href="">Hóspedes</a>
                 </li>
                 <li>
-                    <a href="">Opções</a>
+                    <a href="">Vagas Abertas</a>
                 </li>
                 <li>
-                    <a href="">Opções</a>
+                    <a href="">Vagas Preenchidas</a>
                 </li>
                 <li>
-                    <a href="">Opções</a>
+                    <a href="">Histórico</a>
                 </li>
                 <li>
-                    <a href="">Opções</a>
+                    <a href="">Finanças</a>
                 </li>
                 
             </ul>
         </nav>
 
         <div class="text-center">
-            <a href="logout.php"
+            <a href="../auth/logout.php"
                 class="btn btn-outline-light px-5">
                 Sair
             </a>
@@ -71,7 +71,7 @@
             </ul>
             <!-- Fim Navegação -->
             <div id="special-logout" class="ml-auto">
-                <a href="logout.php" class="btn btn-outline-secondary px-3">Sair</a>
+                <a href="../auth/logout.php" class="btn btn-outline-secondary px-3">Sair</a>
             </div>
         </nav>
 
