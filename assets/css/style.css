@@ -30,10 +30,18 @@ nav a {
     font-size: 25px;
 }
 
-main nav ul li {
-    padding: 2px 50px;
+main nav ul li a {
+    color: #3F63A6 !important;
 }
- a:hover {
+main nav ul li.active a {
+    color: #fff !important;
+}
+
+li.selected a {
+    color: #f8f8f8;
+}
+
+a:hover {
     color: hsla(60, 2%, 75%, 0.5);
     text-decoration: none;
 }

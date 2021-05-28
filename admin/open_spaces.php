@@ -13,7 +13,7 @@
     <!-- Personal CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
 
-    <title>Breveler</title>
+    <title>Breveler - Vagas Preenchidas</title>
 </head>
 <body>
 
@@ -28,7 +28,7 @@
                 <li>
                     <a href="hotel_guests.php">Hóspedes</a>
                 </li>
-                <li>
+                <li class="selected">
                     <a href="open_spaces.php">Vagas Abertas</a>
                 </li>
                 <li>
@@ -76,40 +76,64 @@
         </nav>
 
         <main class="mt-3 bg-light py-3">
+            <!-- <nav class="pb-1">
+                <ul class="d-flex flex-wrap justify-content-around list-unstyled">
+                    <li class="bg-info">
+                        <a href="" class="text-light">Reservadas</a>
+                    </li>
 
-            <h2 class="text-center text-secondary">Home</h2>
+                    <li class="bg-info text-light">
+                        <a href="" class="text-light">Em uso</a>
+                    </li>
+                </ul>
+            </nav> -->
 
             <article class="mx-4 my-3">
                 <div class="container text-light">
+
+                    <h2 class="text-center text-secondary">Vagas Abertas</h2>
+
                     <section class="row my-3">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="box text-center">Dados</div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="box text-center">Dados</div>
                         </div>
-
-                        <div class="col-md-4">
-                            <div class="box text-center">Dados</div>
-                        </div>                        
                     </section>
                     
                     <section class="row my-3">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="box text-center">Dados</div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="box text-center">Dados</div>
                         </div>
-
-                        <div class="col-md-4">
-                            <div class="box text-center">Dados</div>
-                        </div>                        
                     </section>
                 </div>
             </article>
+
+            <nav aria-label="Navegação de página exemplo">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Anterior">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Próximo">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </main>
 
         <footer class="mt-3">

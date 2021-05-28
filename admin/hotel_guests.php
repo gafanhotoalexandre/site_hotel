@@ -12,6 +12,11 @@
 
     <!-- Personal CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .box {
+            height: 425px;
+        }
+    </style>
 
     <title>Breveler</title>
 </head>
@@ -25,7 +30,7 @@
             </div>
 
             <ul class="list-unstyled">
-                <li>
+                <li class="selected">
                     <a href="hotel_guests.php">Hóspedes</a>
                 </li>
                 <li>
@@ -76,37 +81,26 @@
         </nav>
 
         <main class="mt-3 bg-light py-3">
-
-            <h2 class="text-center text-secondary">Home</h2>
+            <nav class="pb-1">
+                <ul class="d-flex flex-wrap justify-content-around align-items-center list-unstyled">
+                    <li class="bg-success px-4">
+                        <a href="" class="text-light">Entra hoje: 12</a>
+                    </li>
+                    <li class="bg-danger px-4">
+                        <a href="" class="text-light">Sai hoje: 05</a>
+                    </li>
+                    <li id="search" class="bg-info px-4">
+                        <a onclick="researcher()" class="text-light">Pesquisar</a>
+                    </li>
+                </ul>
+            </nav>
 
             <article class="mx-4 my-3">
                 <div class="container text-light">
                     <section class="row my-3">
-                        <div class="col-md-4">
+                        <div class="col-md">
                             <div class="box text-center">Dados</div>
                         </div>
-
-                        <div class="col-md-4">
-                            <div class="box text-center">Dados</div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="box text-center">Dados</div>
-                        </div>                        
-                    </section>
-                    
-                    <section class="row my-3">
-                        <div class="col-md-4">
-                            <div class="box text-center">Dados</div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="box text-center">Dados</div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="box text-center">Dados</div>
-                        </div>                        
                     </section>
                 </div>
             </article>
@@ -129,6 +123,8 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <script src="../assets/js/script.js"></script>
 
 </body>
 </html>

@@ -13,7 +13,7 @@
     <!-- Personal CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
 
-    <title>Breveler</title>
+    <title>Breveler - Vagas Preenchidas</title>
 </head>
 <body>
 
@@ -31,7 +31,7 @@
                 <li>
                     <a href="open_spaces.php">Vagas Abertas</a>
                 </li>
-                <li>
+                <li class="selected">
                     <a href="filled_spaces.php">Vagas Preenchidas</a>
                 </li>
                 <li>
@@ -76,37 +76,38 @@
         </nav>
 
         <main class="mt-3 bg-light py-3">
+            <nav class="pb-1">
+                <ul class="d-flex flex-wrap justify-content-around list-unstyled">
+                    <li class="bg-info px-4">
+                        <a href="" class="text-light">Reservadas</a>
+                    </li>
 
-            <h2 class="text-center text-secondary">Home</h2>
+                    <li class="bg-info px-4">
+                        <a href="" class="text-light">Em uso</a>
+                    </li>
+                </ul>
+            </nav>
 
             <article class="mx-4 my-3">
                 <div class="container text-light">
                     <section class="row my-3">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="box text-center">Dados</div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="box text-center">Dados</div>
                         </div>
-
-                        <div class="col-md-4">
-                            <div class="box text-center">Dados</div>
-                        </div>                        
                     </section>
                     
                     <section class="row my-3">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="box text-center">Dados</div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="box text-center">Dados</div>
                         </div>
-
-                        <div class="col-md-4">
-                            <div class="box text-center">Dados</div>
-                        </div>                        
                     </section>
                 </div>
             </article>
