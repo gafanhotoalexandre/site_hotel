@@ -17,10 +17,6 @@
             color: #121f40cc;
             text-decoration: none;
         }
-        .box {
-            background-color: white;
-            color: black;
-        }
     </style>
 </head>
 <body>
@@ -41,15 +37,15 @@
             <ul class="navbar-nav ml-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link lead" href="#home">Home</a>
+                    <a class="nav-link menu-link" href="#home">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link lead" href="#services">Serviços</a>
+                    <a class="nav-link menu-link" href="#services">Serviços</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link lead" href="#reviews">Depoimentos</a>
+                    <a class="nav-link menu-link" href="#reviews">Depoimentos</a>
                 </li>
             </ul>
             <!-- Fim Navegação -->
