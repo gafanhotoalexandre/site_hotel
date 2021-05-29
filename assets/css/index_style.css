@@ -25,8 +25,12 @@ h3, h4 {
 /* #services {
     background-color: white;
 } */
+
 .bg-custom {
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgb(240, 240, 240, 0.2));
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgb(240, 240, 240, 0.85));
+}
+.bg-custom-nav {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgb(240, 240, 240, 0.25));
 }
 .bg-custom-service {
     background: linear-gradient(to top, rgba(255, 255, 255, 0.9), rgb(240, 240, 240, 0.95));
@@ -64,12 +68,6 @@ footer a:hover {
     .review {
         padding-top: 5px;
         padding-bottom: 5px;
-    }
-}
-
-@media (max-width: 575px) {
-    nav ul li a {
-        color: whitesmoke !important;
     }
 }
 

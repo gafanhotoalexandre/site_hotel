@@ -21,7 +21,7 @@
 </head>
 <body>
 
-    <nav class="fixed-top navbar navbar-expand-sm navbar-light bg-transparent shadow">
+    <nav class="fixed-top navbar navbar-expand-sm navbar-light bg-custom-nav shadow">
         <!-- Logo -->
         <a href="index.php" class="h2">Breveler</a>
         <!-- Logo -->
@@ -37,7 +37,7 @@
             <ul class="navbar-nav ml-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#home">Home</a>
+                    <a class="nav-link menu-link" href="#home">Início</a>
                 </li>
 
                 <li class="nav-item">
