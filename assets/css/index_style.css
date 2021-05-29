@@ -3,7 +3,7 @@ html {
 }
 
 main > section#home {
-    height: 600px;
+    height: 650px;
 }
 
 body {
@@ -17,11 +17,14 @@ body {
 h3, h4 {
     color: hsla(223, 56%, 16%, 0.85);
 }
-#services {
+/* #services {
     background-color: white;
-}
+} */
 .bg-custom {
     background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgb(240, 240, 240, 0.2));
+}
+.bg-custom-service {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.9), rgb(240, 240, 240, 0.95));
 }
 
 footer {

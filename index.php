@@ -67,21 +67,23 @@
             </div>    
         </section>
 
-        <section id="services" class="py-4">
+        <!-- Serviços -->
+        <section id="services" class="py-4 bg-custom-service">
             <div class="container">
                 <div class="row">
+
                     <div class="col-md-6">
-                        <img src="./assets/imgs/deluxe_room.jpg"
+                        <img src="./assets/imgs/room_service.jpg"
                             alt="Imagem de Serviço de Quarto"
                                 class="img-fluid"/>
                     </div>
 
-                    <div class="col-md-6 border-left">
+                    <div class="col-md-6">
                         <div class="container">
                             <div class="row">
                                 <div class="col">
 
-                                    <h3 class="text-center">Nossa História</h3>
+                                    <h3 class="text-center">Nossos Serviços</h3>
                                     <h4>Subtítulo</h4>
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto rem velit consequuntur praesentium mollitia dicta corrupti vitae, necessitatibus dolor, voluptatem nemo eaque repellendus? Reprehenderit nulla ab voluptates, quibusdam impedit doloribus.
@@ -93,13 +95,22 @@
 
                                 </div>
                             </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <img src="./assets/imgs/breakfast_service.jpg" alt="Serviço de Quarto" class="img-fluid">
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
 
                 </div>
             </div>
         </section>
+        <!-- Serviços -->
 
+        <!-- Depoimentos -->
         <section id="reviews" class="d-flex flex-column justify-content-center">
             
             <div class="container">
@@ -211,6 +222,7 @@
             <!-- Faça sua reserva! -->
 
         </section>
+        <!-- Depoimentos -->
     </main>
 
     <footer>
