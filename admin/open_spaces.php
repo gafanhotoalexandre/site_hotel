@@ -74,7 +74,7 @@
                     <a href="filled_spaces.php">Vagas Preenchidas</a>
                 </li>
                 <li>
-                    <a href="">Histórico</a>
+                    <a href="hotel_records.php">Histórico</a>
                 </li>
                 <li>
                     <a href="">Finanças</a>
@@ -126,7 +126,7 @@
                 </ul>
             </nav> -->
 
-            <article class="mx-4 my-3">
+            <article class="mx-4 mb-3">
                 <h2 class="text-center text-secondary">Vagas Abertas</h2>
                 <div class="container box py-3">
                     <section class="row">

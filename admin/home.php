@@ -35,7 +35,7 @@
                     <a href="filled_spaces.php">Vagas Preenchidas</a>
                 </li>
                 <li>
-                    <a href="">Histórico</a>
+                    <a href="hotel_records.php">Histórico</a>
                 </li>
                 <li>
                     <a href="">Finanças</a>
@@ -56,17 +56,16 @@
         <nav class="navbar navbar-expand-sm navbar-light bg-light shadow">            
             <!-- Navegação -->
             <ul class="navbar-nav ml-3">
-    
                 <li class="nav-item">
-                    <a class="nav-link lead" href="">Opções</a>
+                    <a class="nav-link lead" href="hotel_guests.php">Hóspedes</a>
                 </li>
     
                 <li class="nav-item">
-                    <a class="nav-link lead" href="">Opções</a>
+                    <a class="nav-link lead" href="open_spaces.php">Vagas Abertas</a>
                 </li>
     
                 <li class="nav-item">
-                    <a class="nav-link lead" href="">Opções</a>
+                    <a class="nav-link lead" href="filled_spaces.php">Vagas Preenchidas</a>
                 </li>
             </ul>
             <!-- Fim Navegação -->
@@ -79,9 +78,9 @@
 
             <h2 class="text-center text-secondary">Home</h2>
 
-            <article class="mx-4 my-3">
+            <article class="mx-4 mb-3">
                 <div class="container text-light">
-                    <section class="row my-3">
+                    <section class="row">
                         <div class="col-md-4">
                             <div class="box text-center">Dados</div>
                         </div>

@@ -64,10 +64,10 @@
                 <li>
                     <a href="open_spaces.php">Vagas Abertas</a>
                 </li>
-                <li class="selected">
+                <li>
                     <a href="filled_spaces.php">Vagas Preenchidas</a>
                 </li>
-                <li>
+                <li class="selected">
                     <a href="hotel_records.php">Histórico</a>
                 </li>
                 <li>
@@ -108,49 +108,51 @@
         </nav>
 
         <main class="mt-3 bg-light py-3">
-            <nav class="pb-1">
-                <ul class="d-flex flex-wrap justify-content-around list-unstyled">
-                    <li class="bg-info px-4">
-                        <a href="" class="text-light">Reservadas</a>
-                    </li>
 
-                    <li class="bg-info px-4">
-                        <a href="" class="text-light">Em uso</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <article class="mx-4 mb-3">
+            <article class="mx-4 my-3">
                 <div class="container box">
                     <section class="row">
+                        <div class="col">
 
-                        <?php for ($i = 1; $i <=4; $i++): ?>
-                            <div class="col-xl-6">
-                                <div class="container">
-                                    <div class="row bg-card py-2 align-items-center">
-                                        <div class="col-md-8">
-                                            <img src="../assets/imgs/hotel_room.jpg" class="img-fluid" alt="Quarto de Hotel">
-                                        </div>
+                            <!-- <div class="table-responsive">
+                                <table class="table table-hover table-dark">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div> -->
 
-                                        <div class="col-md-4">
-                                            <div class="info-room text-center">
-                                                <img src="../assets/imgs/user_icon.png" class="img-fluid" alt="Ícone de Usuário">
-                                                <h6 class="lead">Hóspede</h6>
-                                                <p class="border-top my-1">
-                                                    <a href="" class="info-link">Acessar</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php endfor ?>
-                        
+                        </div>
                     </section>
                 </div>
             </article>
 
-            <nav>
+            <!-- <nav>
                 <ul class="pagination justify-content-center">
                     <li class="page-item">
                         <a class="page-link" href="#" aria-label="Anterior">
@@ -168,7 +170,7 @@
                         </a>
                     </li>
                 </ul>
-            </nav>
+            </nav> -->
         </main>
 
         <footer class="mt-3">

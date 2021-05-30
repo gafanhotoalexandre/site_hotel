@@ -45,6 +45,11 @@
                 font-size: 0.6rem;
             }
         }
+        @media (max-width: 443px) {
+            #info--nav > * {
+                margin: 10px 0;
+            }
+        }
     </style>
 
     <title>Breveler - Hóspedes</title>
@@ -69,7 +74,7 @@
                     <a href="filled_spaces.php">Vagas Preenchidas</a>
                 </li>
                 <li>
-                    <a href="">Histórico</a>
+                    <a href="hotel_records.php">Histórico</a>
                 </li>
                 <li>
                     <a href="">Finanças</a>
@@ -109,8 +114,22 @@
         </nav>
 
         <main class="mt-3 bg-light py-3">
+        
+            <!-- <nav class="container">
+                <ul class="row list-unstyled">
+                    <li class="col-xl-4 bg-success px-4">
+                        <a href="" class="text-light">Entra hoje: 12</a>
+                    </li>
+                    <li class="col-xl-4 bg-danger px-4">
+                        <a href="" class="text-light">Sai hoje: 05</a>
+                    </li>
+                    <li id="search" class="col-xl-4 bg-info px-4">
+                        <a onclick="researcher()" class="text-light btn">Pesquisar</a>
+                    </li>
+                </ul>
+            </nav> -->
             <nav class="pb-1">
-                <ul class="d-flex flex-wrap justify-content-around align-items-center list-unstyled">
+                <ul id="info--nav" class="d-flex flex-wrap justify-content-around align-items-center list-unstyled">
                     <li class="bg-success px-4">
                         <a href="" class="text-light">Entra hoje: 12</a>
                     </li>
@@ -123,9 +142,9 @@
                 </ul>
             </nav>
 
-            <article class="mx-4 my-3">
+            <article class="mx-4 mb-3">
                 <div class="container box">
-                    <section class="row my-3">
+                    <section class="row my-2">
                         <div class="col">
                             <!-- Clientes -->
                             <div class="container">
