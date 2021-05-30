@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
         .bg-card {
-            background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgb(240, 240, 240, 0.25));
+            background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgb(240, 240, 240, 0.85));
             border-radius: 5px;
             margin-top: 5px;
             margin-bottom: 5px;
@@ -33,7 +33,7 @@
         }
 
         p a.info-link {
-            color: rgba(255, 255, 255, 0.85);
+            color: #121F40;
             transition: all .1s;
         }
         p a.info-link:hover {
@@ -47,7 +47,7 @@
         }
     </style>
 
-    <title>Breveler</title>
+    <title>Breveler - Hóspedes</title>
 </head>
 <body>
 
@@ -90,17 +90,16 @@
         <nav class="navbar navbar-expand-sm navbar-light bg-light shadow">            
             <!-- Navegação -->
             <ul class="navbar-nav ml-3">
-    
                 <li class="nav-item">
-                    <a class="nav-link lead" href="">Opções</a>
+                    <a class="nav-link lead" href="hotel_guests.php">Hóspedes</a>
                 </li>
     
                 <li class="nav-item">
-                    <a class="nav-link lead" href="">Opções</a>
+                    <a class="nav-link lead" href="open_spaces.php">Vagas Abertas</a>
                 </li>
     
                 <li class="nav-item">
-                    <a class="nav-link lead" href="">Opções</a>
+                    <a class="nav-link lead" href="filled_spaces.php">Vagas Preenchidas</a>
                 </li>
             </ul>
             <!-- Fim Navegação -->
@@ -125,7 +124,7 @@
             </nav>
 
             <article class="mx-4 my-3">
-                <div class="container box text-light">
+                <div class="container box">
                     <section class="row my-3">
                         <div class="col">
                             <!-- Clientes -->
