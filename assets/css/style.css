@@ -53,7 +53,7 @@ a:hover {
 /* TEMP */
 .box {
     background-color: #121F40;
-    height: 200px;
+    /* height: 200px; */
 }
 
 @media (max-width: 994px) {

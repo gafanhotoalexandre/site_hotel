@@ -91,7 +91,7 @@
             <article class="mx-4 my-3">
                 <div class="container text-light">
 
-                    <h2 class="text-center text-secondary">Vagas Abertas</h2>
+                    <h2 class="text-center h4 text-secondary">Vagas Abertas</h2>
 
                     <section class="row my-3">
                         <div class="col-md-6">
@@ -115,7 +115,7 @@
                 </div>
             </article>
 
-            <nav aria-label="Navegação de página exemplo">
+            <nav>
                 <ul class="pagination justify-content-center">
                     <li class="page-item">
                         <a class="page-link" href="#" aria-label="Anterior">

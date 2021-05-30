@@ -44,7 +44,7 @@ if (isset($_GET['error']) && !empty($_GET['error']) ) {
         <!-- Logo -->
 
         <!-- Navegação -->
-        <ul class="navbar-nav ml-auto">
+        <!-- <ul class="navbar-nav ml-auto">
 
             <li class="nav-item">
                 <a class="nav-link lead" href="">Opções</a>
@@ -57,7 +57,7 @@ if (isset($_GET['error']) && !empty($_GET['error']) ) {
             <li class="nav-item">
                 <a class="nav-link lead" href="">Opções</a>
             </li>
-        </ul>
+        </ul> -->
         <!-- Fim Navegação -->
     </nav>
 

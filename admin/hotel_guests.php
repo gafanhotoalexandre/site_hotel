@@ -13,8 +13,34 @@
     <!-- Personal CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
-        .box {
-            height: 425px;
+        .bg-client {
+            background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgb(240, 240, 240, 0.25));
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        img + p {
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+        }
+
+        p a.client-name {
+            color: rgba(255, 255, 255, 0.85);
+            transition: all .1s;
+        }
+        p a.client-name:hover {
+            color: rgb(255, 255, 255);
+            opacity: .4;
+        }
+        @media (max-width: 1300px) {
+            p.lead {
+                font-size: 0.6rem;
+            }
         }
     </style>
 
@@ -90,16 +116,188 @@
                         <a href="" class="text-light">Sai hoje: 05</a>
                     </li>
                     <li id="search" class="bg-info px-4">
-                        <a onclick="researcher()" class="text-light">Pesquisar</a>
+                        <a onclick="researcher()" class="text-light btn">Pesquisar</a>
                     </li>
                 </ul>
             </nav>
 
             <article class="mx-4 my-3">
-                <div class="container text-light">
+                <div class="container box text-light">
                     <section class="row my-3">
-                        <div class="col-md">
-                            <div class="box text-center">Dados</div>
+                        <div class="col">
+                            <!-- Clientes -->
+                            <div class="container">
+                                <div class="row">
+                                    <!-- Cliente -->
+                                    <?php for ($i = 1; $i <= 8; $i++): ?>
+                                    <div class="col-md-3">
+                                        <div class="container">
+                                            
+                                            <div class="row bg-client">
+                                                <div class="col-md-12">
+                                                    <div class="p-1 text-center">
+                                                        <img src="../assets/imgs/user_icon.png" alt="Ícone de Usuário" class="img-fluid">
+                                                        <p class="lead">
+                                                            <a href="" class="client-name">Nome do Hóspede</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="text-center">
+                                                                    <p class="lead">
+                                                                        ENTRADA
+                                                                    </p>
+                                                                    <p>29/05</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-sm-6">
+                                                                <div class="text-center">
+                                                                    <p class="lead">
+                                                                        SAÍDA
+                                                                    </p>
+                                                                    <p>02/06</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <?php endfor ?>
+                                    <!-- <div class="col-md-3">
+                                        <div class="container">
+
+                                            <div class="row bg-client">
+                                                <div class="col-md-12">
+                                                    <div class="p-1">
+                                                        <img src="../assets/imgs/user_icon.png" alt="Ícone de Usuário" class="img-fluid">
+                                                        <p class="lead text-center">
+                                                            Nome do Hóspede
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="text-center">
+                                                                    <p class="lead">
+                                                                        ENTRADA
+                                                                    </p>
+                                                                    <p>29/05</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="text-center">
+                                                                    <p class="lead">
+                                                                        SAÍDA
+                                                                    </p>
+                                                                    <p>02/06</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="container">
+
+                                            <div class="row bg-client">
+                                                <div class="col-md-12">
+                                                    <div class="p-1">
+                                                        <img src="../assets/imgs/user_icon.png" alt="Ícone de Usuário" class="img-fluid">
+                                                        <p class="lead text-center">
+                                                            Nome do Hóspede
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="text-center">
+                                                                    <p class="lead">
+                                                                        ENTRADA
+                                                                    </p>
+                                                                    <p>29/05</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="text-center">
+                                                                    <p class="lead">
+                                                                        SAÍDA
+                                                                    </p>
+                                                                    <p>02/06</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="container">
+
+                                            <div class="row bg-client">
+                                                <div class="col-md-12">
+                                                    <div class="p-1">
+                                                        <img src="../assets/imgs/user_icon.png" alt="Ícone de Usuário" class="img-fluid">
+                                                        <p class="lead text-center">
+                                                            Nome do Hóspede
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="text-center">
+                                                                    <p class="lead">
+                                                                        ENTRADA
+                                                                    </p>
+                                                                    <p>29/05</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="text-center">
+                                                                    <p class="lead">
+                                                                        SAÍDA
+                                                                    </p>
+                                                                    <p>02/06</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div> -->
+                                    <!-- Clientes -->
+                                </div>
+                            </div>
+                            <!-- Clientes -->
                         </div>
                     </section>
                 </div>
