@@ -39,6 +39,12 @@
             color: rgb(255, 255, 255);
             opacity: .4;
         }
+        p {
+            font-size: 0.8rem;
+        }
+        h6.lead {
+            font-size: 1.1rem;
+        }
         @media (max-width: 1300px) {
             p.lead {
                 font-size: 0.6rem;
@@ -138,7 +144,7 @@
                                             <div class="info-room">
                                                 <h6 class="text-center lead">Informações Quarto</h6>
                                                 <p class="px-3 text-justify">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias minus sunt veritatis.
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi aut esse?
                                                 </p>
                                                 <p class="border-top my-1 text-center">
                                                     <a href="" class="info-link">Acessar</a>
