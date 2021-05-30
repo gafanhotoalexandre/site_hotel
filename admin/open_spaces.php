@@ -12,6 +12,39 @@
 
     <!-- Personal CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .bg-card {
+            background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgb(240, 240, 240, 0.25));
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .box {
+            border-radius: 5px;
+            padding: 3px 5px;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        img + p {
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+        }
+
+        p a.info-link {
+            color: rgba(255, 255, 255, 0.85);
+            transition: all .1s;
+        }
+        p a.info-link:hover {
+            color: rgb(255, 255, 255);
+            opacity: .4;
+        }
+        @media (max-width: 1300px) {
+            p.lead {
+                font-size: 0.6rem;
+            }
+        }
+    </style>
 
     <title>Breveler - Vagas Preenchidas</title>
 </head>
@@ -89,28 +122,34 @@
             </nav> -->
 
             <article class="mx-4 my-3">
-                <div class="container text-light">
+                <h2 class="text-center text-secondary">Vagas Abertas</h2>
+                <div class="container box py-3 text-light">
+                    <section class="row">
 
-                    <h2 class="text-center h4 text-secondary">Vagas Abertas</h2>
+                        <?php for ($i = 1; $i <=4; $i++): ?>
+                            <div class="col-xl-6">
+                                <div class="container">
+                                    <div class="row bg-card py-2 align-items-center">
+                                        <div class="col-md-7">
+                                            <img src="../assets/imgs/hotel_room.jpg" class="img-fluid" alt="Quarto de Hotel">
+                                        </div>
 
-                    <section class="row my-3">
-                        <div class="col-md-6">
-                            <div class="box text-center">Dados</div>
-                        </div>
+                                        <div class="col-md-5">
+                                            <div class="info-room">
+                                                <h6 class="text-center lead">Informações Quarto</h6>
+                                                <p class="px-3 text-justify">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias minus sunt veritatis.
+                                                </p>
+                                                <p class="border-top my-1 text-center">
+                                                    <a href="" class="info-link">Acessar</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endfor ?>
 
-                        <div class="col-md-6">
-                            <div class="box text-center">Dados</div>
-                        </div>
-                    </section>
-                    
-                    <section class="row my-3">
-                        <div class="col-md-6">
-                            <div class="box text-center">Dados</div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="box text-center">Dados</div>
-                        </div>
                     </section>
                 </div>
             </article>

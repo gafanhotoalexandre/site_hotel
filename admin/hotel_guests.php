@@ -13,13 +13,16 @@
     <!-- Personal CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
-        .bg-client {
+        .bg-card {
             background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgb(240, 240, 240, 0.25));
             border-radius: 5px;
             margin-top: 5px;
             margin-bottom: 5px;
         }
-
+        .box {
+            border-radius: 5px;
+            padding: 3px 5px;
+        }
         p {
             margin: 0;
             padding: 0;
@@ -29,11 +32,11 @@
             border-bottom: 1px solid;
         }
 
-        p a.client-name {
+        p a.info-link {
             color: rgba(255, 255, 255, 0.85);
             transition: all .1s;
         }
-        p a.client-name:hover {
+        p a.info-link:hover {
             color: rgb(255, 255, 255);
             opacity: .4;
         }
@@ -130,46 +133,46 @@
                                 <div class="row">
                                     <!-- Cliente -->
                                     <?php for ($i = 1; $i <= 8; $i++): ?>
-                                    <div class="col-md-3">
-                                        <div class="container">
-                                            
-                                            <div class="row bg-client">
-                                                <div class="col-md-12">
-                                                    <div class="p-1 text-center">
-                                                        <img src="../assets/imgs/user_icon.png" alt="Ícone de Usuário" class="img-fluid">
-                                                        <p class="lead">
-                                                            <a href="" class="client-name">Nome do Hóspede</a>
-                                                        </p>
+                                        <div class="col-md-3">
+                                            <div class="container">
+                                                
+                                                <div class="row bg-card">
+                                                    <div class="col-md-12">
+                                                        <div class="p-1 text-center">
+                                                            <img src="../assets/imgs/user_icon.png" alt="Ícone de Usuário" class="img-fluid">
+                                                            <p class="lead">
+                                                                <a href="" class="info-link">Nome do Hóspede</a>
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                </div>
 
-                                                <div class="col-md-12">
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-sm-6">
-                                                                <div class="text-center">
-                                                                    <p class="lead">
-                                                                        ENTRADA
-                                                                    </p>
-                                                                    <p>29/05</p>
+                                                    <div class="col-md-12">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <div class="text-center">
+                                                                        <p class="lead">
+                                                                            ENTRADA
+                                                                        </p>
+                                                                        <p>29/05</p>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
 
-                                                            <div class="col-sm-6">
-                                                                <div class="text-center">
-                                                                    <p class="lead">
-                                                                        SAÍDA
-                                                                    </p>
-                                                                    <p>02/06</p>
+                                                                <div class="col-sm-6">
+                                                                    <div class="text-center">
+                                                                        <p class="lead">
+                                                                            SAÍDA
+                                                                        </p>
+                                                                        <p>02/06</p>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
+                                            </div>
                                         </div>
-                                    </div>
 
                                     <?php endfor ?>
                                     <!-- <div class="col-md-3">
@@ -302,6 +305,27 @@
                     </section>
                 </div>
             </article>
+
+            <nav>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Anterior">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Próximo">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
         </main>
 
         <footer class="mt-3">
