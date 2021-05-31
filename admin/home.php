@@ -12,6 +12,31 @@
 
     <!-- Personal CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .bg-card {
+            background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgb(240, 240, 240, 0.85));
+            border-radius: 5px;
+            margin: 5px;
+            padding: 5px;
+        }
+        .box {
+            border-radius: 5px;
+            padding: 3px 5px;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        p a.info-link {
+            color: #121F40;
+            transition: all .2s;
+        }
+        p a.info-link:hover {
+            color: rgb(18, 31, 64);
+            opacity: .4;
+        }
+    </style>
 
     <title>Breveler</title>
 </head>
@@ -76,37 +101,59 @@
 
         <main class="mt-3 bg-light py-3">
 
-            <h2 class="text-center text-secondary">Home</h2>
-
-            <article class="mx-4 mb-3">
-                <div class="container text-light">
+            <article class="mx-4">
+                <div class="container box text-dark">
                     <section class="row">
-                        <div class="col-md-4">
-                            <div class="box text-center">Dados</div>
-                        </div>
+                        <div class="col-md-12">
+                        
+                            <div class="card bg-card">
+                                <div class="card-header bg-transparent lead">Relatório Semanal</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Este é o relatório semanal.</h5>
+                                    <p class="card-text">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum officia temporibus nostrum amet neque adipisci autem magni, aliquam praesentium incidunt laudantium ullam dolore commodi tempora? Vitae nam temporibus quidem! Eos!
+                                    </p>
+                                </div>
+                            </div>
 
-                        <div class="col-md-4">
-                            <div class="box text-center">Dados</div>
                         </div>
-
-                        <div class="col-md-4">
-                            <div class="box text-center">Dados</div>
-                        </div>                        
                     </section>
-                    
-                    <section class="row my-3">
-                        <div class="col-md-4">
-                            <div class="box text-center">Dados</div>
-                        </div>
 
-                        <div class="col-md-4">
-                            <div class="box text-center">Dados</div>
-                        </div>
+                    <section class="row">
+                        <div class="col-md-6">
 
-                        <div class="col-md-4">
-                            <div class="box text-center">Dados</div>
-                        </div>                        
-                    </section>
+                            <div class="card bg-card">
+                                <div class="card-header bg-transparent lead">Gráficos</div>
+                                <div class="card-body">
+                                    <!-- <h5 class="card-title">Este é o gráfico.</h5> -->
+                                    <img src="../assets/imgs/graph.png" class="img-fluid" alt="Gráfico de entradas da semana">
+
+                                    <p class="card-text border-top mt-3 pt-1 px-3 text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates est adipisci! <a href=""
+                                            class="info-link">Acessar</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="col-md-6">
+
+                            <div class="card bg-card">
+                                <div class="card-header bg-transparent lead">Resultado Financeiro</div>
+                                <div class="card-body">
+                                    <!-- <h5 class="card-title">Este é o resultado financeiro.</h5> -->
+                                    <img src="../assets/imgs/financial_graph.png" class="img-fluid" alt="Gráfico de financeiro semanal">
+
+                                    <p class="card-text border-top mt-3 pt-1 px-3 text-justify">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates est adipisci! <a href=""
+                                            class="info-link">Acessar</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>                 
                 </div>
             </article>
         </main>
