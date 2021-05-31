@@ -57,7 +57,7 @@
             <div class="container align-self-center">
                 <div class="row">
                     <h2 class="display-4 text-center">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        A Breveler Hotel tem o enorme prazer de sempre trazer o melhor atendimento para nossos clientes.
                     </h2>
                 </div>
             </div>    
@@ -80,11 +80,11 @@
                                 <div class="col">
 
                                     <h3 class="text-center">Nossos Serviços</h3>
-                                    <h4>Subtítulo</h4>
+                                    <h4>Infraestrutura de Qualidade</h4>
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto rem velit consequuntur praesentium mollitia dicta corrupti vitae, necessitatibus dolor, voluptatem nemo eaque repellendus? Reprehenderit nulla ab voluptates, quibusdam impedit doloribus.
                                     </p>
-                                    <h4>Subtítulo</h4>
+                                    <h4>Atendimento Completo</h4>
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto rem velit consequuntur praesentium mollitia dicta corrupti vitae, necessitatibus dolor, voluptatem nemo eaque repellendus? Reprehenderit nulla ab voluptates, quibusdam impedit doloribus.
                                     </p>
