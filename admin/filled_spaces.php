@@ -54,7 +54,7 @@
     <div id="sidebar" class="fixed-top">
         <nav>
             <div id="title" class="text-center m-3 p-2">
-                <a href="home.php" class="navbar-brand">HOSPEDAGEM X</a>
+                <a href="home.php" class="navbar-brand">BREVELER</a>
             </div>
 
             <ul class="list-unstyled">
@@ -66,14 +66,7 @@
                 </li>
                 <li class="selected">
                     <a href="filled_spaces.php">Vagas Preenchidas</a>
-                </li>
-                <li>
-                    <a href="hotel_records.php">Histórico</a>
-                </li>
-                <li>
-                    <a href="">Finanças</a>
-                </li>
-                
+                </li>                
             </ul>
         </nav>
 
