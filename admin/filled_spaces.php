@@ -86,7 +86,7 @@
     </div>
 
     <div id="content" class="container-fluid mt-3">
-        <nav class="navbar navbar-expand-sm navbar-light bg-light shadow">            
+        <nav id="top-nav" class="navbar navbar-expand-sm navbar-light bg-light shadow">            
             <!-- Navegação -->
             <ul class="navbar-nav ml-3">
                 <li class="nav-item">
@@ -121,7 +121,7 @@
             </nav>
 
             <article class="mx-4 mb-3">
-                <div class="container box">
+                <div class="container box py-3">
                     <section class="row">
 
                         <?php for ($i = 1; $i <=4; $i++): ?>

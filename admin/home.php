@@ -78,7 +78,7 @@
     </div>
 
     <div id="content" class="container-fluid mt-3">
-        <nav class="navbar navbar-expand-sm navbar-light bg-light shadow">            
+        <nav id="top-nav" class="navbar navbar-expand-sm navbar-light bg-light shadow">            
             <!-- Navegação -->
             <ul class="navbar-nav ml-3">
                 <li class="nav-item">

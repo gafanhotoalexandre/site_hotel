@@ -92,7 +92,7 @@
     </div>
 
     <div id="content" class="container-fluid mt-3">
-        <nav class="navbar navbar-expand-sm navbar-light bg-light shadow">            
+        <nav id="top-nav" class="navbar navbar-expand-sm navbar-light bg-light shadow">            
             <!-- Navegação -->
             <ul class="navbar-nav ml-3">
                 <li class="nav-item">
@@ -114,18 +114,6 @@
         </nav>
 
         <main class="mt-3 bg-light py-3">
-            <!-- <nav class="pb-1">
-                <ul class="d-flex flex-wrap justify-content-around list-unstyled">
-                    <li class="bg-info">
-                        <a href="" class="text-light">Reservadas</a>
-                    </li>
-
-                    <li class="bg-info text-light">
-                        <a href="" class="text-light">Em uso</a>
-                    </li>
-                </ul>
-            </nav> -->
-
             <article class="mx-4 mb-3">
                 <h2 class="text-center text-secondary">Vagas Abertas</h2>
                 <div class="container box py-3">
