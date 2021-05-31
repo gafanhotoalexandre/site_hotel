@@ -115,11 +115,10 @@
 
         <main class="mt-3 bg-light py-3">
             <article class="mx-4 mb-3">
-                <h2 class="text-center text-secondary">Vagas Abertas</h2>
                 <div class="container box py-3">
                     <section class="row">
 
-                        <?php for ($i = 1; $i <=4; $i++): ?>
+                        <?php for ($i = 1; $i <= 6; $i++): ?>
                             <div class="col-xl-6">
                                 <div class="container">
                                     <div class="row bg-card py-2 align-items-center">
