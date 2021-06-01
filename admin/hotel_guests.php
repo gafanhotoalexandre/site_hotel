@@ -73,6 +73,9 @@
                 <li>
                     <a href="filled_spaces.php">Vagas Preenchidas</a>
                 </li>                
+                <li>
+                    <a href="reservation.php">Reservar</a>
+                </li>
             </ul>
         </nav>
 
@@ -152,7 +155,7 @@
                                                         <div class="p-1 text-center">
                                                             <img src="../assets/imgs/user_icon.png" alt="Ícone de Usuário" class="img-fluid">
                                                             <p class="lead">
-                                                                <a href="" class="info-link">Nome do Hóspede</a>
+                                                                <a href="personal_record.php" class="info-link">Nome do Hóspede</a>
                                                             </p>
                                                         </div>
                                                     </div>

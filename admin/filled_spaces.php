@@ -66,7 +66,10 @@
                 </li>
                 <li class="selected">
                     <a href="filled_spaces.php">Vagas Preenchidas</a>
-                </li>                
+                </li>
+                <li>
+                    <a href="reservation.php">Reservar</a>
+                </li>
             </ul>
         </nav>
 

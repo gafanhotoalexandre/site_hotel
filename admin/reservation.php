@@ -65,16 +65,7 @@
 
             <ul class="list-unstyled">
                 <li>
-                    <a href="hotel_guests.php">Hóspedes</a>
-                </li>
-                <li class="selected">
-                    <a href="open_spaces.php">Vagas Abertas</a>
-                </li>
-                <li>
-                    <a href="filled_spaces.php">Vagas Preenchidas</a>
-                </li>
-                <li>
-                    <a href="reservation.php">Reservar</a>
+                    <a href="hotel_guests.php">Voltar</a>
                 </li>
             </ul>
         </nav>
@@ -114,30 +105,78 @@
                 <div class="container box py-3">
                     <section class="row">
 
-                        <?php for ($i = 1; $i <= 6; $i++): ?>
-                            <div class="col-xl-6">
-                                <div class="container">
-                                    <div class="row bg-card py-2 align-items-center">
-                                        <div class="col-md-7">
-                                            <img src="../assets/imgs/hotel_room.jpg" class="img-fluid" alt="Quarto de Hotel">
-                                        </div>
+                        <div class="col">
+                            <div class="bg-card py-2">
+                                <p class="lead text-center">Cadastrar Reserva/Hospedagem</p>
+                            </div>
+                        </div>
 
-                                        <div class="col-md-5">
-                                            <div class="info-room">
-                                                <h6 class="text-center lead">Informações Quarto</h6>
-                                                <p class="px-3 text-justify">
-                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi aut esse?
-                                                </p>
-                                                <p class="border-top my-1 text-center">
-                                                    <a href="" class="info-link">Acessar</a>
-                                                </p>
+                    </section>
+
+                    <section class="row">
+                        <div class="col">
+                            
+                            <div class="card bg-card">
+                                <div class="card-header bg-transparent lead">Reserva</div>
+                                <div class="card-body">
+                                    <form action="">
+
+                                        <div class="form-group row">
+                                            <label for="guest" class="col-sm-3 col-form-label">Hóspede</label>
+                                            <div class="col-sm-6">
+                                                <select name="guest" id="guest" class="form-control">
+                                                    <option value="1">hash - Weskley</option>
+                                                    <option value="2">hash - Davi Freire</option>
+                                                    <option value="3">hash - Pedro Derman</option>
+                                                </select>
                                             </div>
                                         </div>
-                                    </div>
+
+                                        <div class="form-group row">
+                                            <label for="suite" class="col-sm-3 col-form-label">Suíte</label>
+                                            <div class="col-sm-6">
+                                                <select name="suite" id="suite" class="form-control">
+                                                    <option value="1">hash - </option>
+                                                    <option value="2">hash - </option>
+                                                    <option value="3">hash - </option>
+                                                </select>
+                                            </div>
+                                        </div>  
+
+                                        <div class="form-group row">
+                                            <label for="num_guests" class="col-sm-3 col-form-label">Quantidade de Hóspedes</label>
+                                            <div class="col-sm-4">
+                                                <input type="number" name="num_guests" id="num_guests"
+                                                    class="form-control" min="1" max="8">
+                                            </div>
+                                        </div>          
+
+                                        <div class="form-group row">
+                                            <label for="entry_date" class="col-sm-3 col-form-label">Entrada Prevista</label>
+                                            <div class="col-sm-4">
+                                                <input type="date" name="entry_date" id="entry_date"
+                                                    class="form-control">
+                                            </div>
+                                        </div>          
+
+                                        <div class="form-group row">
+                                            <label for="expected_exit" class="col-sm-3 col-form-label">Saída Prevista</label>
+                                            <div class="col-sm-4">
+                                                <input type="date" name="expected_exit" id="expected_exit"
+                                                    class="form-control">
+                                            </div>
+                                        </div>          
+
+                                        <p class="text-center">
+                                            <button class="btn btn-warning">Cancelar</button>
+                                            <button class="btn btn-success">Confirmar</button>
+                                        </p>
+
+                                    </form>
                                 </div>
                             </div>
-                        <?php endfor ?>
 
+                        </div>
                     </section>
                 </div>
             </article>

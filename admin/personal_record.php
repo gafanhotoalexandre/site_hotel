@@ -107,38 +107,69 @@
                     <section class="row">
                         <div class="col">
 
-                            <!-- <div class="table-responsive">
-                                <table class="table table-hover table-dark">
-                                    <thead class="thead-light">
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">First</th>
-                                            <th scope="col">Last</th>
-                                            <th scope="col">Handle</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div> -->
+                                <div class="container">  
+                                    <div class="row bg-card">
+
+                                        <div class="col-md-4 bg-danger">
+                                            <div class="p-1 text-center">
+                                                <img src="../assets/imgs/user_icon.png" alt="Ícone de Usuário" class="img-fluid">
+                                                <p class="lead">
+                                                    <a href="personal_record.php" class="info-link">Nome do Hóspede</a>
+                                                </p>
+
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quibusdam unde!
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-8">
+
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col bg-success">
+
+                                                        <form action="">
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-6">
+                                                                    <label for="user_name">Nome do Hóspede</label>
+                                                                    <input type="text" id="user_name" class="form-control">
+                                                                </div>
+
+                                                                <div class="form-group col-md-6">
+                                                                    <label for="user_email">E-mail do Hóspede</label>
+                                                                    <input type="text" id="user_email" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </form>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="text-center">
+                                                    <p class="lead">
+                                                        ENTRADA
+                                                    </p>
+                                                    <p>29/05</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="text-center">
+                                                    <p class="lead">
+                                                        SAÍDA
+                                                    </p>
+                                                    <p>02/06</p>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+                                    </div>
+                                </div>
 
                         </div>
                     </section>

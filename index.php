@@ -23,7 +23,10 @@
 
     <nav class="fixed-top navbar navbar-expand-sm navbar-light bg-custom-nav shadow">
         <!-- Logo -->
-        <a href="index.php" class="h2">Breveler</a>
+        <a href="index.php" class="h2">
+            <img src="./assets/imgs/breveler.png" class="img-fluid" alt="Logo do site">
+        </a>
+        <!-- <a href="index.php" class="h2">Breveler</a> -->
         <!-- Logo -->
 
         <!-- Botão Menu -->
