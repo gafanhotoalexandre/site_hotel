@@ -8,7 +8,7 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
@@ -19,6 +19,11 @@
         nav a.h2, nav ul li a {
             color: #121f40cc;
             text-decoration: none;
+        }
+        @media (max-width: 750px) {
+            #slogan {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
@@ -62,7 +67,7 @@
         <section id="home" class="d-flex">
             <div class="container align-self-center">
                 <div class="row">
-                    <h2 class="display-4 text-center">
+                    <h2 id="slogan" class="display-4 text-center">
                         A Breveler Hotel tem o enorme prazer de sempre trazer o melhor atendimento para nossos clientes.
                     </h2>
                 </div>
