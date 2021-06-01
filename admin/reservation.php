@@ -52,7 +52,7 @@
         }
     </style>
 
-    <title>Breveler - Vagas Abertas</title>
+    <title>Reservar - Breveler</title>
 </head>
 <body>
 
@@ -65,7 +65,7 @@
 
             <ul class="list-unstyled">
                 <li>
-                    <a href="hotel_guests.php">Voltar</a>
+                    <a href="records.php">Voltar</a>
                 </li>
             </ul>
         </nav>

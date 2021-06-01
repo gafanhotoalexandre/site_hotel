@@ -39,6 +39,12 @@
             color: rgb(255, 255, 255);
             opacity: .4;
         }
+        p {
+            font-size: 0.8rem;
+        }
+        h6.lead {
+            font-size: 1.1rem;
+        }
         @media (max-width: 1300px) {
             p.lead {
                 font-size: 0.6rem;
@@ -46,7 +52,7 @@
         }
     </style>
 
-    <title>Breveler - Vagas Preenchidas</title>
+    <title>Editar Reserva - Breveler</title>
 </head>
 <body>
 
@@ -59,14 +65,8 @@
 
             <ul class="list-unstyled">
                 <li>
-                    <a href="hotel_guests.php">Hóspedes</a>
+                    <a href="records.php">Voltar</a>
                 </li>
-                <li>
-                    <a href="open_spaces.php">Vagas Abertas</a>
-                </li>
-                <li>
-                    <a href="filled_spaces.php">Vagas Preenchidas</a>
-                </li>                
             </ul>
         </nav>
 
@@ -101,100 +101,80 @@
         </nav>
 
         <main class="mt-3 bg-light py-3">
+            <article class="mx-4 mb-3">
+                <div class="container box py-3">
+                    <section class="row">
 
-            <article class="mx-4 my-3">
-                <div class="container box">
+                        <div class="col">
+                            <div class="bg-card py-2">
+                                <p class="lead text-center">Editar Reserva/Hospedagem</p>
+                            </div>
+                        </div>
+
+                    </section>
+
                     <section class="row">
                         <div class="col">
+                            
+                            <div class="card bg-card">
+                                <div class="card-header bg-transparent lead">Reserva</div>
+                                <div class="card-body">
+                                    <form action="">
 
-                                <div class="container">  
-                                    <div class="row bg-card">
-
-                                        <div class="col-md-4 bg-danger">
-                                            <div class="p-1 text-center">
-                                                <img src="../assets/imgs/user_icon.png" alt="Ícone de Usuário" class="img-fluid">
-                                                <p class="lead">
-                                                    <a href="personal_record.php" class="info-link">Nome do Hóspede</a>
-                                                </p>
-
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quibusdam unde!
-                                                </p>
+                                        <div class="form-group row">
+                                            <label for="guest" class="col-sm-3 col-form-label">Hóspede</label>
+                                            <div class="col-sm-6">
+                                                <select name="guest" id="guest" class="form-control">
+                                                    <option value="1"><?= (rand(2, 9) * time()) ?> - Nome Hóspede</option>
+                                                </select>
                                             </div>
                                         </div>
 
-                                        <div class="col-md-8">
-
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col bg-success">
-
-                                                        <form action="">
-                                                            <div class="form-row">
-                                                                <div class="form-group col-md-6">
-                                                                    <label for="user_name">Nome do Hóspede</label>
-                                                                    <input type="text" id="user_name" class="form-control">
-                                                                </div>
-
-                                                                <div class="form-group col-md-6">
-                                                                    <label for="user_email">E-mail do Hóspede</label>
-                                                                    <input type="text" id="user_email" class="form-control">
-                                                                </div>
-                                                            </div>
-                                                        </form>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- <div class="row">
+                                        <div class="form-group row">
+                                            <label for="suite" class="col-sm-3 col-form-label">Suíte</label>
                                             <div class="col-sm-6">
-                                                <div class="text-center">
-                                                    <p class="lead">
-                                                        ENTRADA
-                                                    </p>
-                                                    <p>29/05</p>
-                                                </div>
+                                                <select name="suite" id="suite" class="form-control">
+                                                    <option value="1"> <?= (rand(2, 9) * time()) ?> </option>
+                                                </select>
                                             </div>
+                                        </div>  
 
-                                            <div class="col-sm-6">
-                                                <div class="text-center">
-                                                    <p class="lead">
-                                                        SAÍDA
-                                                    </p>
-                                                    <p>02/06</p>
-                                                </div>
+                                        <div class="form-group row">
+                                            <label for="num_guests" class="col-sm-3 col-form-label">Quantidade de Hóspedes</label>
+                                            <div class="col-sm-4">
+                                                <input type="number" name="num_guests" id="num_guests"
+                                                    class="form-control" min="1" max="8" value="2">
                                             </div>
-                                        </div> -->
+                                        </div>          
 
-                                    </div>
+                                        <div class="form-group row">
+                                            <label for="entry_date" class="col-sm-3 col-form-label">Entrada Prevista</label>
+                                            <div class="col-sm-4">
+                                                <input type="date" name="entry_date" id="entry_date"
+                                                    class="form-control" value="<?= date('Y-m-d') ?>" placeholder="dd/mm/aaaa">
+                                            </div>
+                                        </div>          
+
+                                        <div class="form-group row">
+                                            <label for="expected_exit" class="col-sm-3 col-form-label">Saída Prevista</label>
+                                            <div class="col-sm-4">
+                                                <input type="date" name="expected_exit" id="expected_exit"
+                                                    class="form-control" value="<?= date('Y-m-d', strtotime('05-06-2021')) ?>">
+                                            </div>
+                                        </div>          
+
+                                        <p class="text-center">
+                                            <button class="btn btn-success">Salvar</button>
+                                        </p>
+
+                                    </form>
                                 </div>
+                            </div>
 
                         </div>
                     </section>
                 </div>
             </article>
-
-            <!-- <nav>
-                <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Anterior">
-                            <span aria-hidden="true">&laquo;</span>
-                            <span class="sr-only">Anterior</span>
-                        </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Próximo">
-                            <span aria-hidden="true">&raquo;</span>
-                            <span class="sr-only">Próximo</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav> -->
         </main>
 
         <footer class="mt-3">

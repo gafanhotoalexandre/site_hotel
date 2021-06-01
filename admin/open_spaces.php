@@ -52,7 +52,7 @@
         }
     </style>
 
-    <title>Breveler - Vagas Abertas</title>
+    <title>Suítes Abertas - Breveler</title>
 </head>
 <body>
 
@@ -68,13 +68,13 @@
                     <a href="hotel_guests.php">Hóspedes</a>
                 </li>
                 <li class="selected">
-                    <a href="open_spaces.php">Vagas Abertas</a>
+                    <a href="open_spaces.php">Suítes Abertas</a>
                 </li>
                 <li>
-                    <a href="filled_spaces.php">Vagas Preenchidas</a>
+                    <a href="filled_spaces.php">Suítes Ocupadas</a>
                 </li>
                 <li>
-                    <a href="reservation.php">Reservar</a>
+                    <a href="records.php">Reservar</a>
                 </li>
             </ul>
         </nav>
