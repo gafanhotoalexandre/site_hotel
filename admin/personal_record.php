@@ -1,12 +1,17 @@
 <?php
     require_once '../auth/verify_login.php';
+
+    $onlyRead = false;
+    if (isset($_GET['act']) && $_GET['act'] == 'view') {
+        $onlyRead = true;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="../assets/imgs/admin_favicon.ico" type="image/x-icon">
 
@@ -127,7 +132,8 @@
                                         <div class="form-group row">
                                             <label for="guest" class="col-sm-3 col-form-label">Hóspede</label>
                                             <div class="col-sm-6">
-                                                <select name="guest" id="guest" class="form-control">
+                                                <select name="guest" id="guest" class="form-control"
+                                                    <?= $onlyRead ? 'disabled' : '' ?> >
                                                     <option value="1"><?= (rand(2, 9) * time()) ?> - Nome Hóspede</option>
                                                 </select>
                                             </div>
@@ -136,7 +142,8 @@
                                         <div class="form-group row">
                                             <label for="suite" class="col-sm-3 col-form-label">Suíte</label>
                                             <div class="col-sm-6">
-                                                <select name="suite" id="suite" class="form-control">
+                                                <select name="suite" id="suite" class="form-control"
+                                                    <?= $onlyRead ? 'disabled' : '' ?> >
                                                     <option value="1"> <?= (rand(2, 9) * time()) ?> </option>
                                                 </select>
                                             </div>
@@ -146,7 +153,8 @@
                                             <label for="num_guests" class="col-sm-3 col-form-label">Quantidade de Hóspedes</label>
                                             <div class="col-sm-4">
                                                 <input type="number" name="num_guests" id="num_guests"
-                                                    class="form-control" min="1" max="8" value="2">
+                                                    class="form-control" min="1" max="8" value="2"
+                                                        <?= $onlyRead ? 'disabled' : '' ?> >
                                             </div>
                                         </div>          
 
@@ -154,7 +162,8 @@
                                             <label for="entry_date" class="col-sm-3 col-form-label">Entrada Prevista</label>
                                             <div class="col-sm-4">
                                                 <input type="date" name="entry_date" id="entry_date"
-                                                    class="form-control" value="<?= date('Y-m-d') ?>" placeholder="dd/mm/aaaa">
+                                                    class="form-control" value="<?= date('Y-m-d') ?>" placeholder="dd/mm/aaaa"
+                                                        <?= $onlyRead ? 'disabled' : '' ?> >
                                             </div>
                                         </div>          
 
@@ -162,13 +171,16 @@
                                             <label for="expected_exit" class="col-sm-3 col-form-label">Saída Prevista</label>
                                             <div class="col-sm-4">
                                                 <input type="date" name="expected_exit" id="expected_exit"
-                                                    class="form-control" value="<?= date('Y-m-d', strtotime('05-06-2021')) ?>">
+                                                    class="form-control" value="<?= date('Y-m-d', strtotime('05-06-2021')) ?>"
+                                                        <?= $onlyRead ? 'disabled' : '' ?> >
                                             </div>
                                         </div>          
 
-                                        <p class="text-center">
-                                            <button class="btn btn-success">Salvar</button>
-                                        </p>
+                                        <?php if(! $onlyRead): ?>
+                                            <p class="text-center">
+                                                <button class="btn btn-success">Salvar</button>
+                                            </p>
+                                        <?php endif ?>
 
                                     </form>
                                 </div>
