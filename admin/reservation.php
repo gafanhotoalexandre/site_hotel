@@ -128,9 +128,9 @@
                                             <label for="guest" class="col-sm-3 col-form-label">Hóspede</label>
                                             <div class="col-sm-6">
                                                 <select name="guest" id="guest" class="form-control">
-                                                    <option value="1">hash - Weskley</option>
-                                                    <option value="2">hash - Davi Freire</option>
-                                                    <option value="3">hash - Pedro Derman</option>
+                                                    <option value="1">101001 - Weskley</option>
+                                                    <option value="2">101002 - Davi Freire</option>
+                                                    <option value="3">101003 - Pedro Derman</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -139,9 +139,9 @@
                                             <label for="suite" class="col-sm-3 col-form-label">Suíte</label>
                                             <div class="col-sm-6">
                                                 <select name="suite" id="suite" class="form-control">
-                                                    <option value="1">hash - </option>
-                                                    <option value="2">hash - </option>
-                                                    <option value="3">hash - </option>
+                                                    <option value="1">010110 - Q04A2</option>
+                                                    <option value="2">010120 - Q05A2</option>
+                                                    <option value="3">010130 - Q06A2</option>
                                                 </select>
                                             </div>
                                         </div>  
