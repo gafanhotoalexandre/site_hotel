@@ -191,7 +191,7 @@
                                                             <i class="fas fa-edit text-info"
                                                                 onclick="action('edit')"></i>
                                                             <i class="fas fa-check-square text-success"
-                                                                onclick="remove()"></i>
+                                                                onclick="check()"></i>
                                                         </td>
                                                     </tr>
                                                 <?php endfor ?>
@@ -257,9 +257,9 @@
             }
         }
 
-        function remove()
+        function check()
         {
-            confirm('Apagar registro?')
+            confirm('Finalizar registro?')
         }
     </script>
 </body>
