@@ -190,7 +190,7 @@
                                                                 onclick="action('view')"></i>
                                                             <i class="fas fa-edit text-info"
                                                                 onclick="action('edit')"></i>
-                                                            <i class="fas fa-trash-alt text-danger"
+                                                            <i class="fas fa-check-square text-success"
                                                                 onclick="remove()"></i>
                                                         </td>
                                                     </tr>
